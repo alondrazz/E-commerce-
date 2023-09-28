@@ -16,11 +16,11 @@ Tag.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      tag_price: {
-        type: DataTypes.DECIMAL(10,2),
-        allowNull: false,
-        validate: {
-          isNumeric: true,
+      category_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'category',
+          key: 'id',
         }
       }
   },

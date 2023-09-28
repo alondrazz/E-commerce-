@@ -14,17 +14,9 @@ Category.init(
       },
     category_name: {
         type: DataTypes.STRING,
-        allowNull: false,
-      },
-    description: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-       },
-      quantity: {
-        type: DataTypes. INTEGER,
-        allowNull: false,
-      }
+        allowNull: false
   },
+},
   {
     sequelize,
     timestamps: false,
